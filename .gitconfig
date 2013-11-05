@@ -1,0 +1,42 @@
+user]
+        email = email
+        name = name
+[color]
+        ui = auto
+        status = auto
+        diff = auto
+        branch = auto
+        interactive = auto
+        grep = auto
+[alias]
+        st = status
+        ci = commit
+#       lg = log --graph --date=iso --pretty='%C(yellow)%h%Creset %C(cyan bold)%d%Creset %s %Cgreen[%cd]%Creset' --decorate --all --stat
+        lg = log --graph --date=iso --pretty='%C(blue)%an %C(yellow)%h%Creset %C(cyan bold)%d%Creset %s %Cgreen[%cd]%Creset' --decorate --all --stat
+ 
+ 
+#  lg = log --graph --decorate --oneline --abbrev --relative-date --topo-order
+#  lga = log --graph --decorate --oneline --abbrev --relative-date --topo-order --all
+[merge]
+        ff = false
+[core]
+        autocrlf = input
+ 
+ 
+[push]
+    default = tracking
+[color]
+    ui = auto
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
+[alias]
+    co = checkout
+    st = status
+    ci = commit
+    # lg = log --graph --date=iso --pretty='%C(yellow)%h%Creset %C(cyan bold)%d%Creset %s %Cgreen[%cd]%Creset' --decorate --all --stat
+    lg = log --oneline --graph --date=iso --pretty='%C(blue)%an %C(yellow)%h %Creset %C(cyan bold)%d %C(bold green)[%cd] %C(bold green)(%ar) \n\t ⇛ %Creset %s %Creset' --decorate --all --stat
+[http]
+    sslVerify = false
